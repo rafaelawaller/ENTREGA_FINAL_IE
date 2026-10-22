@@ -6,12 +6,20 @@
 /* --- Estilos Generales --- */
 body {
     font-family: sans-serif;
-    margin: 70px;
-    margin-top:0;
-    padding: 2em;
+    margin: 0;
+    margin-top:20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0;
     background-color: rgb(70, 62, 173);
 }
 
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgb(70, 62, 173);
+    color: white;
+}
 
 h1, h2 {
     font-family: 'BBH Bartle';
@@ -28,11 +36,23 @@ h3{
 #container {
     display: grid;
     /* Define 2 columnas: la primera ocupa 1 fracción, la segunda 2 fracciones */
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
     gap: 5em; /* Espacio entre las columnas */
     align-items: start; /* Alinea los items al inicio */
+    background-color: rgb(228, 245, 168);
+    padding: 100px;
+    margin-left: 0px;
 }
 
+#container-2 {
+    display: grid;
+    /* Define 2 columnas: la primera ocupa 1 fracción, la segunda 2 fracciones */
+    grid-template-columns: 1fr;
+    gap: 5em; /* Espacio entre las columnas */
+    align-items: start; /* Alinea los items al inicio */
+    background-color: rgb(195, 19, 183);
+    padding: 100px;
+}
 /* --- Columna Izquierda: Intro --- */
 .intro {
     /* Por defecto, se ubica en la primera columna del grid */
@@ -85,8 +105,8 @@ h3{
 /* --- Galería de Proyectos --- */
 .galeria {
     display: grid;
-    /* Define 3 columnas de igual tamaño */
-    grid-template-columns: repeat(4, 1fr);
+    /* Define 5 columnas de igual tamaño */
+    grid-template-columns: repeat(5, 1fr);
     gap: 1.5em; /* Espacio entre las tarjetas */
 }
 
@@ -143,4 +163,36 @@ h3{
     .galeria {
         grid-template-columns: 1fr;
     }
+} 
+
+#container-3 {
+    display: grid;
+    /* Define 2 columnas: la primera ocupa 1 fracción, la segunda 2 fracciones */
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5em; /* Espacio entre las columnas */
+    align-items: start; /* Alinea los items al inicio */
+    background-color: rgb(195, 84, 19);
+    padding: 100px;
+}
+
+.tarjeta-proyecto {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden; /* Asegura que la imagen no se salga de los bordes redondeados */
+    margin-bottom: 20px; /* Espacio entre las tarjetas */
+    grid-column: 2 / span 3; /* Ocupa las columnas 2, 3 y 4 */ 
+}
+
+
+.tarjeta-proyecto h3 {
+    text-align: center;
+    padding: 0.5em 0;
+    margin: 0;
+}
+
+.tarjeta-proyecto img {
+    /* La imagen se ajusta al ancho del ancla */
+    width: 100%;
+    display: block; /* Elimina espacios en blanco debajo de la imagen */
 }
