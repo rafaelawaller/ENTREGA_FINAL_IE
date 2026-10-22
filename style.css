@@ -13,7 +13,8 @@ body {
 
 h1, h2 {
     font-family: 'Space Mono';
-    color: rgb(#FF96D6);
+    color: rgb(255,150,214);
+    
 }
 
 h3{
@@ -57,8 +58,8 @@ h3{
     padding: 15px 45px;
     margin-top: 30px;
     border: none;
-    background-color: rgb(70, 62, 173);
-    color: #F5F5F5;
+    background-color: rgb(255,150,214);
+    color: rgb(70, 62, 173) ;
  
     cursor: pointer;
     border-radius: 50px;
