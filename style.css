@@ -1,41 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 
 /* --- Estilos Generales --- */
 body {
-    font-family: sans-serif;
+    font-family: 'Quicksand', sans-serif;
     margin: 0;
     margin-top:20px;
     margin-left: 0px;
     margin-right: 0px;
     padding: 0;
-    background-color: rgb(70, 62, 173);
+    background-color: rgb(247, 242, 224);
 }
 
 header {
     text-align: center;
     padding: 20px 0;
-    background-color: rgb(70, 62, 173);
+    background-color: rgb(247, 242, 224);
     color: white;
 }
 
-h1, h2 {
-    font-family: 'Montserrat';
-    color: rgb(255,150,214);
+h1, h2{
+    font-family: 'Unbounded', bold;
+    color: rgb(128, 174, 232);
+    
+}
+ 
+h5 {
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(128, 174, 232);
     
 }
 
 h2 {
-    font-family: 'Montserrat';
+    font-family: 'Unbounded', regular;
     color: rgb(228, 245, 168);
     
 }
 
 h3{
-    font-family: 'Montserrat';
+    font-family: 'Quicksand', regular;
     font-size: 1em;
 }
 
@@ -57,7 +62,7 @@ h3{
     grid-template-columns: 1fr;
     gap: 5em; /* Espacio entre las columnas */
     align-items: start; /* Alinea los items al inicio */
-    background-color: rgb(255,150,214);
+    background-color: rgb(128, 174, 232);
     padding: 100px;
 }
 /* --- Columna Izquierda: Intro --- */
@@ -66,12 +71,12 @@ h3{
     display: flex;
     flex-direction: column; /* Organiza los elementos internos en una columna */
     justify-content: center; /* Centra el contenido verticalmente */
-    color: rgb(70, 62, 173);
+    color: rgb(128, 174, 232);
 }
 
 .intro p {
     /* El párrafo ya usa el ancho de su contenedor por defecto */
-    font-family: 'Montserrat';
+    font-family: 'Quicksand', sans-serif;
     text-align: justify;
     line-height: 1.6;
 }
@@ -83,13 +88,13 @@ h3{
 }
 
 .intro button {
-    font-family: 'Montserrat';
+    font-family: 'Unbounded', sans-serif;
     font-size: 1em;
     padding: 15px 45px;
     margin-top: 30px;
     border: none;
-    background-color: rgb(255,150,214);
-    color: rgb(70, 62, 173) ;
+    background-color: rgb(128, 174, 232);
+    color: rgb(247, 242, 224) ;
  
     cursor: pointer;
     border-radius: 50px;
@@ -97,8 +102,8 @@ h3{
 }
 
 .intro button:hover {
-    background: rgb(70, 62, 173) ;
-    color: rgb(255,150,214);
+    background: rgb(247, 242, 224) ;
+    color: rgb(128, 174, 232);
 }
 
 
@@ -120,7 +125,7 @@ h3{
 /* --- Tarjetas Individuales --- */
 .tarjeta {
     background-color: rgb(228, 245, 168);
-    color: rgb(255,150,214);
+    color: rgb(128, 174, 232);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     overflow: hidden; /* Asegura que la imagen no se salga de los bordes redondeados */
@@ -179,15 +184,15 @@ h3{
     grid-template-columns: repeat(5, 1fr);
     gap: 5em; /* Espacio entre las columnas */
     align-items: start; /* Alinea los items al inicio */
-    background-color: rgb(115, 122, 210);
+    background-color: rgb(228, 245, 168);
     padding: 100px;
 }
 
 .tarjeta-proyecto {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(247, 242, 224);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    color: rgb(70, 62, 173);
+    color: rgb(128, 174, 232);
     overflow: hidden; /* Asegura que la imagen no se salga de los bordes redondeados */
     margin-bottom: 20px; /* Espacio entre las tarjetas */
     grid-column: 2 / span 3; /* Ocupa las columnas 2, 3 y 4 */ 
