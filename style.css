@@ -27,6 +27,12 @@ h1, h2 {
     
 }
 
+h2 {
+    font-family: 'BBH Bartle';
+    color: rgb(228, 245, 168);
+    
+}
+
 h3{
     font-family: 'Open Sans';
     font-size: 1em;
@@ -50,7 +56,7 @@ h3{
     grid-template-columns: 1fr;
     gap: 5em; /* Espacio entre las columnas */
     align-items: start; /* Alinea los items al inicio */
-    background-color: rgb(195, 19, 183);
+    background-color: rgb(255,150,214);
     padding: 100px;
 }
 /* --- Columna Izquierda: Intro --- */
@@ -59,6 +65,7 @@ h3{
     display: flex;
     flex-direction: column; /* Organiza los elementos internos en una columna */
     justify-content: center; /* Centra el contenido verticalmente */
+    color: rgb(70, 62, 173);
 }
 
 .intro p {
@@ -90,8 +97,7 @@ h3{
 
 .intro button:hover {
     background: rgb(70, 62, 173) ;
-    color: white;
-
+    color: rgb(255,150,214);
 }
 
 
@@ -112,7 +118,8 @@ h3{
 
 /* --- Tarjetas Individuales --- */
 .tarjeta {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(228, 245, 168);
+    color: rgb(255,150,214);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     overflow: hidden; /* Asegura que la imagen no se salga de los bordes redondeados */
@@ -171,7 +178,7 @@ h3{
     grid-template-columns: repeat(5, 1fr);
     gap: 5em; /* Espacio entre las columnas */
     align-items: start; /* Alinea los items al inicio */
-    background-color: rgb(195, 84, 19);
+    background-color: rgb(115, 122, 210);
     padding: 100px;
 }
 
@@ -179,6 +186,7 @@ h3{
     background-color: rgb(255, 255, 255);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: rgb(70, 62, 173);
     overflow: hidden; /* Asegura que la imagen no se salga de los bordes redondeados */
     margin-bottom: 20px; /* Espacio entre las tarjetas */
     grid-column: 2 / span 3; /* Ocupa las columnas 2, 3 y 4 */ 
@@ -196,3 +204,17 @@ h3{
     width: 100%;
     display: block; /* Elimina espacios en blanco debajo de la imagen */
 }
+
+.tarjeta-proyecto a {
+    /* El ancla ocupa todo el espacio de su columna en la galería */
+    display: block; /* Permite que el ancla ocupe todo el espacio */
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease-in-out;
+}
+
+.tarjeta-proyecto:hover {
+    filter: brightness(70%); /* Aplica un filtro de brillo al 70% (más oscuro) */
+    transform: scale(1.00); /* Efecto de zoom al pasar el mouse */
+    }
